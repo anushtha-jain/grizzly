@@ -882,10 +882,6 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
-  padding-bottom: 130px;
-}
-
 .contact .info {
   padding: 30px;
   background: #fff;
@@ -955,6 +951,45 @@ section {
 .contact .info .phone:hover i {
   background: #149ddd;
   color: #fff;
+}
+
+.contact .info .contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.contact .info .contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #050d18;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact .info .contact-link span {
+  font-size: 22px;
+}
+
+.contact .info .contact-link i {
+  float: none;
+}
+
+.contact .info .contact-link:hover {
+  color: #149ddd;
+}
+
+.contact .info .contact-link:hover i {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .info {
+  margin: 0 auto;
 }
 
 .contact .php-email-form {
@@ -1145,9 +1180,8 @@ section {
 }
 
 .custom-list {
-  display: inline-block;
-  width: 49%;
-  vertical-align: top;
+  margin: 0;
+  padding-left: 20px;
 }
 
 button.check-out {
